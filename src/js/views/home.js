@@ -13,6 +13,7 @@ import "../../styles/home.scss";
 export const Home = props => {
 	const { store, actions } = useContext(Context);
 	const params = useParams();
+	let NameGroups = "";
 	return (
 		<div>
 			<div className="container-fluid bg-dark text-white">
@@ -31,6 +32,12 @@ export const Home = props => {
 			<div className="container d-flex justify-content-center">
 				<ul className="list-group">
 					{store.events.reverse().map((item, index) => {
+						for (let i in store.groups) {
+							if (store.groups[i].ID === item.meta_keys._groupId) {
+								NameGroups = store.groups[i].post_content;
+							}
+						}
+
 						return (
 							<div
 								className="card mt-2 d-flex justify-content-center "
@@ -51,13 +58,13 @@ export const Home = props => {
 									</div>
 									<div className="col-md-8">
 										<p className="card-text">
-											<Link to={"/events/" + item.meta_keys._groupId}>
+											<Link to={"/events/" + item.ID}>
 												<span>{item.post_title}</span>
 											</Link>
 										</p>
 										<p className="card-text mb-2">
 											<Link to={"/groups/" + item.meta_keys._groupId}>
-												<span>Meetup {item.meta_keys._groupId}</span>
+												<span>{NameGroups}</span>
 											</Link>
 										</p>
 									</div>

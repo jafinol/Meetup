@@ -20,9 +20,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero consectetur risus vehicula interdum eu at elit. Proin a commodo erat, eu molestie ipsum. Aliquam tristique nunc a est tristique, et convallis risus ullamcorper. Fusce nec massa ac enim pellentesque ornare. Pellentesque non sapien varius, pellentesque tellus sit amet, facilisis justo. Duis rhoncus nunc id elementum dapibus. Sed dictum lacinia vestibulum.",
 					post_title: "1st Event for Meetup 1",
 					meta_keys: {
-						day: "20180428",
+						day: "20210428",
 						time: "07:00 AM",
-						_groupId: 1
+						_groupId: 1,
+						repetition: "Every Monday and Friday"
 					}
 				},
 				{
@@ -31,9 +32,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero consectetur risus vehicula interdum eu at elit. Proin a commodo erat, eu molestie ipsum. Aliquam tristique nunc a est tristique, et convallis risus ullamcorper. Fusce nec massa ac enim pellentesque ornare. Pellentesque non sapien varius, pellentesque tellus sit amet, facilisis justo. Duis rhoncus nunc id elementum dapibus. Sed dictum lacinia vestibulum.",
 					post_title: "2nd Event for Meetup 1",
 					meta_keys: {
-						day: "20180430",
+						day: "20210430",
 						time: "07:00 AM",
-						_groupId: 1
+						_groupId: 1,
+						repetition: "Every Tuesday"
 					}
 				},
 				{
@@ -42,9 +44,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero consectetur risus vehicula interdum eu at elit. Proin a commodo erat, eu molestie ipsum. Aliquam tristique nunc a est tristique, et convallis risus ullamcorper. Fusce nec massa ac enim pellentesque ornare. Pellentesque non sapien varius, pellentesque tellus sit amet, facilisis justo. Duis rhoncus nunc id elementum dapibus. Sed dictum lacinia vestibulum.",
 					post_title: "1st Event for Meetup 2",
 					meta_keys: {
-						day: "20180517",
+						day: "20210517",
 						time: "07:00 AM",
-						_groupId: 2
+						_groupId: 2,
+						repetition: "Every Tusday and Friday"
 					}
 				},
 				{
@@ -53,9 +56,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero consectetur risus vehicula interdum eu at elit. Proin a commodo erat, eu molestie ipsum. Aliquam tristique nunc a est tristique, et convallis risus ullamcorper. Fusce nec massa ac enim pellentesque ornare. Pellentesque non sapien varius, pellentesque tellus sit amet, facilisis justo. Duis rhoncus nunc id elementum dapibus. Sed dictum lacinia vestibulum.",
 					post_title: "3rd Event for Meetup 1",
 					meta_keys: {
-						day: "20180520",
+						day: "20210520",
 						time: "07:00 AM",
-						_groupId: 1
+						_groupId: 1,
+						repetition: "Every Friday"
 					}
 				},
 				{
@@ -64,9 +68,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero consectetur risus vehicula interdum eu at elit. Proin a commodo erat, eu molestie ipsum. Aliquam tristique nunc a est tristique, et convallis risus ullamcorper. Fusce nec massa ac enim pellentesque ornare. Pellentesque non sapien varius, pellentesque tellus sit amet, facilisis justo. Duis rhoncus nunc id elementum dapibus. Sed dictum lacinia vestibulum.",
 					post_title: "2nd Event for Meetup 2",
 					meta_keys: {
-						day: "20180530",
+						day: "20210530",
 						time: "07:00 AM",
-						_groupId: 2
+						_groupId: 2,
+						repetition: "Every Monday"
 					}
 				}
 			],
@@ -75,13 +80,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 					ID: 1,
 					post_content: "Meetup 1",
 					post_title: "Tech Enthusiasts Meetup 1",
-					members: ["robert", "jjtime", "username2", "cheeselover", "neweradude", "james1996"]
+					members: ["robert", "jjtime", "username2", "cheeselover", "neweradude", "james1996"],
+					city: "Orlando",
+					state: "Florida"
 				},
 				{
 					ID: 2,
-					post_content: "Meetup 2",
+					post_content: "Group 2",
 					post_title: "Tech Enthusiasts Meetup 2",
-					members: ["robert", "jjtime", "username2", "cheeselover", "neweradude", "james1996"]
+					members: ["robert", "jjtime", "username2", "cheeselover", "neweradude", "james1996"],
+					city: "Miami",
+					state: "Florida"
 				}
 			]
 		},
