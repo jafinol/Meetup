@@ -41,7 +41,7 @@ export const Events = props => {
 												</Link>
 											</p>
 
-											<p className="col-md-3">
+											<p className=" col-md-3">
 												<p>People going</p>
 
 												<button

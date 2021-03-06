@@ -22,7 +22,7 @@ export const Home = props => {
 						<p>The Meetup Clone</p>
 					</h2>
 					<p className="d-flex justify-content-center">This is a mini project create by 4GeeksAcademy</p>
-					<p className="d-flex justify-content-center">
+					<p className="d-flex justify-content-center" style={{ fontSize: "10px" }}>
 						Using: ReactJs, Bootstrap, @Fortaweasome, Moment, React-router
 					</p>
 					<br />
@@ -40,12 +40,12 @@ export const Home = props => {
 
 						return (
 							<div
-								className="card mt-2 d-flex justify-content-center "
+								className="card mt-2 mb-2 d-flex justify-content-center "
 								key={index}
 								style={{ width: "400px" }}>
 								<div className="card-header">
 									<h5>
-										<Moment format="MMMM Do YYYY">{item.meta_keys.day}</Moment>
+										<Moment format="MMMM Do">{item.meta_keys.day}</Moment>
 									</h5>
 								</div>
 								<div className="card-body" />

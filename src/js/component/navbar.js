@@ -8,9 +8,9 @@ export const Navbar = () => {
 				<span className="navbar-brand mb-0 h1">4GeeksAcademy</span>
 			</Link>
 			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Login</button>
-				</Link>
+				<button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					Login
+				</button>
 			</div>
 		</nav>
 	);

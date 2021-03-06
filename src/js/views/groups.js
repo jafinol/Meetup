@@ -52,7 +52,7 @@ export const Groups = props => {
 											style={{ width: "400px" }}>
 											<div className="card-header">
 												<h5>
-													<Moment format="MMMM Do YYYY">{item.meta_keys.day}</Moment>
+													<Moment format="MMMM Do">{item.meta_keys.day}</Moment>
 												</h5>
 											</div>
 											<div className="card-body" />
