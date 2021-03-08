@@ -31,26 +31,38 @@ export const Navbar = () => {
 								<div className="modal-body text-dark">
 									<div className="row">
 										<div className="col-md-5">
-											<input
-												type="text"
-												className="form-control"
-												id="Username"
-												placeholder="Username"
-												value=""
-												required
-											/>
+											<div className="input-group mb-3">
+												<input
+													type="text"
+													className="form-control"
+													placeholder="Username"
+													aria-label="Username"
+													aria-describedby="basic-addon2"
+												/>
+												<div className="input-group-append">
+													<span className="input-group-text" id="basic-addon2">
+														<i className="fas fa-user" />
+													</span>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div className="row">
 										<div className="col-md-5">
-											<input
-												type="text"
-												className="form-control"
-												id="Password"
-												placeholder="Password"
-												value=""
-												required
-											/>
+											<div className="input-group mb-3">
+												<input
+													type="text"
+													className="form-control"
+													placeholder="Password"
+													aria-label="Password"
+													aria-describedby="basic-addon2"
+												/>
+												<div className="input-group-append">
+													<span className="input-group-text" id="basic-addon2">
+														<i className="fas fa-key" />
+													</span>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
