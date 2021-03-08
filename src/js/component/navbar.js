@@ -34,8 +34,8 @@ export const Navbar = () => {
 											<input
 												type="text"
 												className="form-control"
-												id="username"
-												placeholder="username"
+												id="Username"
+												placeholder="Username"
 												value=""
 												required
 											/>
