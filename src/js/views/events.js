@@ -40,26 +40,31 @@ export const Events = props => {
 													<p style={{ fontSize: "14px" }}>{NameGroups}</p>
 												</Link>
 											</p>
+											<div className=" col-md-3">
+												<div className="mr-2 centerdiv">
+													<p className="mr-3">
+														<p>People going</p>
 
-											<p className=" col-md-3">
-												<p>People going</p>
-
-												<button
-													type="button"
-													className="btn btn-primary d-flex justify-content-center">
-													Login to RSVP
-												</button>
-												<p>
-													<i
-														className="fab fa-twitter mt-2 mr-4"
-														style={{ fontSize: "40px" }}
-													/>
-													<i
-														className="fab fa-facebook-square mt-2"
-														style={{ fontSize: "40px" }}
-													/>
-												</p>
-											</p>
+														<center>
+															<button
+																type="button"
+																className="btn btn-primary d-flex justify-content-center">
+																Login to RSVP
+															</button>
+														</center>
+														<p>
+															<i
+																className="fab fa-twitter mt-2 mr-4"
+																style={{ fontSize: "40px" }}
+															/>
+															<i
+																className="fab fa-facebook-square mt-2"
+																style={{ fontSize: "40px" }}
+															/>
+														</p>
+													</p>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div className="container">

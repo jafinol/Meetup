@@ -21,7 +21,9 @@ export const Home = props => {
 					<h2 className="d-flex justify-content-center">
 						<p>The Meetup Clone</p>
 					</h2>
-					<p className="d-flex justify-content-center">This is a mini project create by 4GeeksAcademy</p>
+					<p className="d-flex justify-content-center">
+						This is a mini project create by Jose Finol Coronado
+					</p>
 					<p className="d-flex justify-content-center" style={{ fontSize: "10px" }}>
 						Using: ReactJs, Bootstrap, @Fortaweasome, Moment, React-router
 					</p>
