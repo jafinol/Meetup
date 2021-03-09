@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 
 export const Navbar = () => {
+	const [login, setLogin] = useState({ username: "", password: "" });
+
 	return (
 		<div>
 			<nav className="navbar navbar-dark bg-dark text-white ">
@@ -38,6 +40,7 @@ export const Navbar = () => {
 													placeholder="Username"
 													aria-label="Username"
 													aria-describedby="basic-addon2"
+													onClick={e => setLogin({ ...login, username: e.target.value })}
 												/>
 												<div className="input-group-append">
 													<span className="input-group-text" id="basic-addon2">
@@ -56,6 +59,7 @@ export const Navbar = () => {
 													placeholder="Password"
 													aria-label="Password"
 													aria-describedby="basic-addon2"
+													onClick={e => setLogin({ ...login, password: e.target.value })}
 												/>
 												<div className="input-group-append">
 													<span className="input-group-text" id="basic-addon2">
